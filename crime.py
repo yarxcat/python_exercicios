@@ -1,9 +1,11 @@
+#O programa vai identificar se o entrevistado é inocente, suspeito, cúmplice ou o assassino
 print('=' * 30)
 print('Entrevistando um suspeito')
 print('=' * 30)
 print('Responda "S" para SIM e "N" para NÂO.')
 print('-' * 30)
 
+#a classificação começa em zero, já que nenhuma resposta foi calculada ainda
 classifica = 0
 
 q1 = input('Telefonou para a vitima? ').upper()
@@ -26,7 +28,8 @@ if q4 == ' S':
 
 if q5 == 'S':
     classifica += 1
-
+    
+#aqui usamos os pontos classificados para definir o entrevistado, usando if
 if classifica < 2:
     print('Inocente')
 elif classifica == 2:
