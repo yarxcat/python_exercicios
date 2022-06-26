@@ -1,3 +1,5 @@
+#identificando o nome de usuario e a senha
+
 nome = input('Digite um nome de usuario: ').upper()
 senha = input('Digite uma senha: ').upper()
 
